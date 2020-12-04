@@ -1,3 +1,5 @@
+# Puzzle: https://adventofcode.com/2020/day/2
+
 inputfile = open("D:\coding\Advent of Code 2020\day2\day2input.txt", "r")
 lines = inputfile.readlines()
 endlines = []
