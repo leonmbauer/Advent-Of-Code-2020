@@ -1,3 +1,5 @@
+# Puzzle Link: https://adventofcode.com/2020/day/6
+
 from collections import Counter
 
 inputfile = open("D:\coding\Advent of Code 2020\day6\day6input.txt", "r")
