@@ -1,3 +1,5 @@
+# Puzzle Link: https://adventofcode.com/2020/day/3
+
 import math
 
 inputfile = open("D:\coding\Advent of Code 2020\day3\day3input.txt", "r")
