@@ -6,7 +6,7 @@ rules = []
 bags = []
 totalbags = []
 totalbagct = []
-finalanswer = 1
+finalanswer = 0
 multiplier = 1
 for value in lines:
     rules.append(value.strip("\n"))
@@ -46,10 +46,12 @@ def day7(rules, color):
         totalbags.append(bag)
         day7(rules, bag)
 testrules = ["shiny gold bags contain 2 dark red bags.", "dark red bags contain 2 dark orange bags.", "dark orange bags contain 2 dark yellow bags.", "dark yellow bags contain 2 dark green bags.", "dark green bags contain 2 dark blue bags.", "dark blue bags contain 2 dark violet bags.", "dark violet bags contain no other bags."]
-day7(rules, "shiny gold")
+day7(testrules, "shiny gold")
 
-# for rule in ruledict:
-#     for bag in ruledict[rule]:
-#         multiplier *= bag[1]
+for rule in ruledict:
+    for bag in ruledict[rule]:
+        multiplier *= bag[1]
+        finalanswer += bag[1] + multiplier
 
 print(ruledict)
+print(finalanswer)
